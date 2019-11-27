@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+
+	<definition name="loginLayout" template="/WEB-INF/jsps/layout/main2.jsp">
+		<put-attribute name="header" value="/WEB-INF/jsps/layout/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsps/layout/footer.jsp" />
+	</definition>
+	
+	<definition name="login" extends="loginLayout">
+		<put-attribute name="body" value="/WEB-INF/jsps/login/login.jsp" />
+	</definition>
+
+	<definition name="welcome" extends="loginLayout">
+		<put-attribute name="body" value="/WEB-INF/jsps/common/welcome.jsp" />
+	</definition>
+		
+</tiles-definitions>
